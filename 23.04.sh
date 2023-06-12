@@ -61,7 +61,7 @@ gsettings set org.gnome.desktop.background primary-color "#000000"
 gsettings set org.gnome.desktop.interface clock-show-weekday "true"
 gsettings set org.gnome.desktop.wm.keybindings switch-panels "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-panels-backward "[]"
-gsettings set org.gnome.mutter.center-new-windows "true"
+gsettings set org.gnome.mutter center-new-windows "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt>Tab']"
 
