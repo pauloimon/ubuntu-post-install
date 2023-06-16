@@ -21,6 +21,12 @@ sudo apt install -y \
     piper \
     wget
 
+# Install asdf from GitHub repository
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch master
+echo -e "\n# ---\n# asdf\n# ---" >> ~/.bashrc
+echo ". \"\$HOME/.asdf/asdf.sh\"" >> ~/.bashrc
+echo ". \"\$HOME/.asdf/completions/asdf.bash\"" >> ~/.bashrc
+
 # Install Beekeeper Studio app from third-party repository
 wget --quiet -O - https://deb.beekeeperstudio.io/beekeeper.key | sudo apt-key add -
 echo "deb https://deb.beekeeperstudio.io stable main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list
