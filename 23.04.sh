@@ -21,7 +21,7 @@ sudo apt install -y \
     piper \
     wget
 
-# Install asdf from GitHub repository
+# Install asdf CLI app from GitHub repository
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch master
 echo -e "\n# ---\n# asdf\n# ---" >> ~/.bashrc
 echo ". \"\$HOME/.asdf/asdf.sh\"" >> ~/.bashrc
