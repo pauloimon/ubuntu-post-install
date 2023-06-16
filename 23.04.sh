@@ -45,6 +45,11 @@ sudo apt update && sudo apt install -y brave-browser
 wget -q "https://discord.com/api/download?platform=linux&format=deb" -O /tmp/discord.deb
 sudo apt install -y /tmp/discord.deb
 
+# Install NordVPN CLI app from third-party repository
+wget -q "https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb" -O /tmp/nordvpn-repository.deb
+sudo apt install -y /tmp/nordvpn-repository.deb
+sudo apt update && sudo apt install -y nordvpn
+
 # Install Spotify app from third-party repository
 curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
