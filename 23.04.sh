@@ -66,6 +66,10 @@ sudo apt autoclean && sudo apt autoremove -y
 # Enable system firewall
 sudo ufw enable
 
+# Disable connectivity checking
+sudo sed -i "s/^\.set\.enabled=true$/\.set\.enabled=false/" /var/lib/NetworkManager/NetworkManager-intern.conf
+sudo service NetworkManager restart
+
 # Configure NordVPN
 nordvpn set analytics disabled
 nordvpn set dns 8.8.8.8 8.8.4.4
