@@ -66,6 +66,12 @@ sudo apt autoclean && sudo apt autoremove -y
 # Enable system firewall
 sudo ufw enable
 
+# Configure NordVPN
+nordvpn set analytics disabled
+nordvpn set dns 8.8.8.8 8.8.4.4
+nordvpn set notify enabled
+nordvpn whitelist add subnet 192.168.100.0/24
+
 # Customize Gnome Shell settings
 gsettings set org.gnome.desktop.background picture-options "none"
 gsettings set org.gnome.desktop.background primary-color "#000000"
