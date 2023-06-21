@@ -51,6 +51,10 @@ wget -q "https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1
 sudo apt install -y /tmp/nordvpn-repository.deb
 sudo apt update && sudo apt install -y nordvpn
 
+# Install Raspberry Pi Imager app from official website
+wget -q "https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb" -O /tmp/raspberry-pi-imager.deb
+sudo apt install -y /tmp/raspberry-pi-imager.deb
+
 # Install Spotify app from third-party repository
 curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
