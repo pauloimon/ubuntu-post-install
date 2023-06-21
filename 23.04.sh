@@ -19,6 +19,7 @@ sudo apt install -y \
     gnome-tweaks \
     nautilus-image-converter \
     piper \
+    tilix \
     wget
 
 # Install asdf CLI app from GitHub repository
@@ -79,6 +80,7 @@ nordvpn whitelist add subnet 192.168.100.0/24
 # Customize Gnome Shell settings
 gsettings set org.gnome.desktop.background picture-options "none"
 gsettings set org.gnome.desktop.background primary-color "#000000"
+gsettings set org.gnome.desktop.default-applications.terminal exec "tilix"
 gsettings set org.gnome.desktop.interface clock-show-weekday "true"
 gsettings set org.gnome.desktop.interface locate-pointer "true"
 gsettings set org.gnome.desktop.wm.keybindings switch-panels "[]"
@@ -87,5 +89,8 @@ gsettings set org.gnome.mutter center-new-windows "true"
 gsettings set org.gnome.nautilus.preferences open-folder-on-dnd-hover "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt>Tab']"
+
+# Customize Tilix settings
+gsettings set com.gexperts.Tilix.Settings terminal-title-style "none"
 
 echo "Done!"
