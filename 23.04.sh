@@ -77,8 +77,8 @@ sudo service NetworkManager restart
 
 # Configure NordVPN
 nordvpn set analytics disabled
-nordvpn set dns 8.8.8.8 8.8.4.4
 nordvpn set notify enabled
+nordvpn set threatprotectionlite enabled
 nordvpn whitelist add subnet 192.168.100.0/24
 
 # Customize Gnome Shell settings
