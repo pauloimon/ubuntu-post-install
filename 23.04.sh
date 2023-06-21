@@ -67,7 +67,7 @@ sudo apt autoclean && sudo apt autoremove -y
 sudo ufw enable
 
 # Disable connectivity checking
-sudo sed -i "s/^\.set\.enabled=true$/\.set\.enabled=false/" /var/lib/NetworkManager/NetworkManager-intern.conf
+sudo sed -i "s/^\.set\.enabled=true$/.set.enabled=false/" /var/lib/NetworkManager/NetworkManager-intern.conf
 sudo service NetworkManager restart
 
 # Configure NordVPN
