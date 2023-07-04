@@ -64,6 +64,10 @@ sudo apt update && sudo apt install -y spotify-client
 wget -q "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -O /tmp/code.deb
 sudo apt install -y /tmp/code.deb
 
+# Install Zoom app from official website
+wget -q "https://zoom.us/client/5.15.2.4260/zoom_amd64.deb" -O /tmp/zoom.deb
+sudo apt install -y /tmp/zoom.deb
+
 # Upgrade system and remove unused packages
 sudo apt dist-upgrade -y
 sudo apt autoclean && sudo apt autoremove -y
