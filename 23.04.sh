@@ -12,6 +12,8 @@ sudo apt install -y \
     chrome-gnome-shell \
     curl \
     dconf-editor \
+    fonts-firacode \
+    fonts-jetbrains-mono \
     git \
     git-flow \
     gnome-shell-extension-ubuntu-tiling-assistant \
