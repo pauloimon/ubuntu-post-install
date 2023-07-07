@@ -62,6 +62,10 @@ curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt update && sudo apt install -y spotify-client
 
+# Install Ulauncher app from third-party repository
+sudo add-apt-repository -y ppa:agornostal/ulauncher
+sudo apt install -y ulauncher
+
 # Install Visual Studio Code app from official website
 wget -q "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -O /tmp/code.deb
 sudo apt install -y /tmp/code.deb
