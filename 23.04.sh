@@ -53,6 +53,10 @@ wget -q "https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1
 sudo apt install -y /tmp/nordvpn-repository.deb
 sudo apt update && sudo apt install -y nordvpn
 
+# Install ONLYOFFICE app from official website
+wget -q "https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb" -O /tmp/onlyoffice.deb
+sudo apt install -y /tmp/onlyoffice.deb
+
 # Install Raspberry Pi Imager app from official website
 wget -q "https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb" -O /tmp/raspberry-pi-imager.deb
 sudo apt install -y /tmp/raspberry-pi-imager.deb
