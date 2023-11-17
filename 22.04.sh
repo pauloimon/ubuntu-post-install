@@ -14,6 +14,10 @@ sudo apt install -y \
     piper \
     tilix
 
+# Bring back cedilla on US Intl. Alt. keyboards
+echo -e "\n# ---\n# cedilla module\n# ---" >> ~/.profile
+echo "GTK_IM_MODULE=cedilla" >> ~/.profile
+
 # Install asdf CLI app from GitHub repository
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch master
 echo -e "\n# ---\n# asdf\n# ---" >> ~/.bashrc
