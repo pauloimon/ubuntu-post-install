@@ -5,7 +5,6 @@ sudo apt update
 
 # Install utility packages from official repositories
 sudo apt install -y \
-    chrome-gnome-shell \
     dconf-editor \
     fonts-jetbrains-mono \
     git \
