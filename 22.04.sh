@@ -52,6 +52,7 @@ gsettings set org.gnome.mutter center-new-windows "true"
 gsettings set org.gnome.nautilus.preferences open-folder-on-dnd-hover "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt>Tab']"
+gsettings set org.gtk.Settings.FileChooser sort-directories-first "true"
 
 # Customize Tilix settings
 gsettings set com.gexperts.Tilix.Settings terminal-title-style "none"
