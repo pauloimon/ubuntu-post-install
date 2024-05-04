@@ -23,6 +23,7 @@ sudo apt install -y \
   gnome-browser-connector \
   gnome-sushi \
   gnome-tweaks \
+  libfuse2t64 \
   spotify-client
 
 sudo ufw enable
