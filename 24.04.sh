@@ -20,6 +20,7 @@ sudo apt install -y \
   fonts-jetbrains-mono \
   git \
   git-flow \
+  git-lfs \
   gnome-browser-connector \
   gnome-sushi \
   gnome-tweaks \
